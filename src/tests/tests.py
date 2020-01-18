@@ -46,6 +46,14 @@ class UsersTest(unittest.TestCase):
         json_data = json.loads(res.data)
         self.assertEqual(res.status_code, 400)
         self.assertTrue(json_data.get('password'))
+        
+         def test_user_login(self):
+                res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user))
+                self.assertEqual(res.status_code, 201)
+                res = self.client().post('/api/v1/users/login', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user)
+                json_data = json.loads(res.data)
+                self.assertTrue(json_data.get('jwt_token'))
+                self.assertEqual(res.status_code, 200)
 
           def tearDown(self):
                 with self.app.app_context():
