@@ -1,0 +1,20 @@
+language: python
+dist: bionic
+
+addons:
+  postgresql: "9.4"
+services:
+  - postgresql
+  
+install:
+  - pip install -r requirements.txt
+  
+efore_script:
+    - psql -c 'create database food_delivery;' -U postgres
+script:
+    - pytest src/tests/*
+
+after_success:
+    - coveralls
+notifications:
+  email: false
