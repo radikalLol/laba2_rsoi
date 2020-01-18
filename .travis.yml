@@ -11,9 +11,7 @@ services:
   
   before_script:
     - psql -c 'create database food_delivery;' -U postgres
-  install:
-    - pip install pipenv
-    - pipenv install
+
   script:
     - pytest --cov=src --cov-config .coveragerc
 
