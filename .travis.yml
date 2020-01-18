@@ -6,14 +6,15 @@ addons:
 services:
   - postgresql
   
- install:
+install:
   - pip install -r requirements.txt
   
-  before_script:
+efore_script:
     - psql -c 'create database food_delivery;' -U postgres
-
-  script:
+script:
     - pytest --cov=src --cov-config .coveragerc
 
-  after_success:
+after_success:
     - coveralls
+notifications:
+  email: false
