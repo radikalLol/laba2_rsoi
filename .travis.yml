@@ -1,8 +1,14 @@
-  language: python
-  python:
-    - "3.6"
-  services:
-    - postgresql
+language: python
+dist: bionic
+
+addons:
+  postgresql: "9.4"
+services:
+  - postgresql
+  
+ install:
+  - pip install -r requirements.txt
+  
   before_script:
     - psql -c 'create database food_delivery;' -U postgres
   install:
@@ -12,5 +18,3 @@
     - pytest --cov=src --cov-config .coveragerc
   after_success:
     - coveralls
-  addons:
-    - postgresql: "9.3"
