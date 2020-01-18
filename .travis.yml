@@ -12,7 +12,7 @@ install:
 efore_script:
     - psql -c 'create database food_delivery;' -U postgres
 script:
-    - pytest src/tests/tests.py
+    - pytest --cov=src --cov-config .coveragerc
 
 after_success:
     - coveralls
