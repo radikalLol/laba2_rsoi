@@ -16,5 +16,6 @@ services:
     - pipenv install
   script:
     - pytest --cov=src --cov-config .coveragerc
+
   after_success:
     - coveralls
