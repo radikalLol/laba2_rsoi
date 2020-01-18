@@ -5,15 +5,11 @@ addons:
   postgresql: "9.4"
 services:
   - postgresql
-  
  install:
   - pip install -r requirements.txt
   
   before_script:
-    - psql -c 'create database food_delivery;' -U postgres
-  install:
-    - pip install pipenv
-    - pipenv install
+    - psql -c 'create database food_delivery;'
   script:
     - pytest --cov=src --cov-config .coveragerc
   after_success:
