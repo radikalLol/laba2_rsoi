@@ -25,7 +25,7 @@ def create():
 @order_api.route('/', methods=['GET'])
 def get_all():
 
-    orders = OrdersModel.get_all_sales()
+    orders = OrdersModel.get_all_orders()
     data = orders_schema.dump(orders, many=True).data
     return custom_response(data, 200)
 
@@ -46,7 +46,7 @@ def delete(sale_id):
     """
   Delete
   """
-    order = OrdersModel.get_one_sale(sale_id)
+    order = OrdersModel.get_one_order(sale_id)
     if not order:
         return custom_response({'error': 'order not found'}, 404)
     data = orders_schema.dump(order).data

@@ -1,12 +1,14 @@
 #src/app.py
 
-from flask import Flask
+from flask import Flask, render_template, redirect, url_for
 
 from .config import app_config
 from .models import db, bcrypt
 from .views.UserView import user_api as user_blueprint
 from .views.SalesView import sales_api as sale_blueprint
 from .views.OrdersView import order_api as order_blueprint
+from flask_cors import CORS
+from flask_bootstrap import Bootstrap
 
 def create_app(env_name):
 
@@ -20,6 +22,8 @@ def create_app(env_name):
     bcrypt.init_app(app)  # add this linese
 
     db.init_app(app)  # add this line
+    Bootstrap(app)
+
 
     app.register_blueprint(user_blueprint, url_prefix='/api/v1/users') # add this line
     app.register_blueprint(sale_blueprint, url_prefix='/api/v1/sales')
@@ -30,6 +34,8 @@ def create_app(env_name):
         """
         example endpoint
         """
-        return 'Congratulations! API is working'
+        return "HELLO WORLD"
+
+
 
     return app

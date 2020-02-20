@@ -3,6 +3,7 @@ import jwt
 import os
 import datetime
 from flask import json,Response,request,g
+import flask
 from functools import wraps
 from ..models.UserModel import UserModel
 
@@ -53,12 +54,12 @@ class Auth():
     def auth_required(func):
         @wraps(func)
         def decorated_auth(*args, **kwargs):
-            if 'api-token' not in request.headers:
-                return Response(
-                    mimetype="application/json",
-                    response=json.dumps({'error': 'Authentication token is not available, please login to get one'}),
-                    status=400
-                )
+            #request.headers["api-token"]= "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODIwNjA4NjQsImlhdCI6MTU4MTk3NDQ2NCwic3ViIjoxfQ.DxdAib_s_GiCuEdUuD7sa322NsMAy2KKfoM38hRQSPM"
+           # if 'api-token' not in request.headers:
+            #    return Response(
+             #      mimetype="application/json",
+             #       response=json.dumps({'error': 'Authentication token is not available, please login to get one'}),
+              #      status=400)
             token = request.headers.get('api-token')
             data = Auth.decode_token(token)
             if data['error']:
@@ -77,6 +78,6 @@ class Auth():
                     status=400
                 )
             g.user = {'id': user_id}
-            return func(*args, **kwargs)
+            return func(*args, **kwargs) #,{'api-token':'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1ODIwNjA4NjQsImlhdCI6MTU4MTk3NDQ2NCwic3ViIjoxfQ.DxdAib_s_GiCuEdUuD7sa322NsMAy2KKfoM38hRQSPM'}
 
         return decorated_auth

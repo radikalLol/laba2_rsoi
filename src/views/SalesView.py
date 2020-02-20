@@ -1,5 +1,5 @@
 
-from flask import request, g, Blueprint, json, Response
+from flask import request, g, Blueprint, json, Response,render_template, redirect, url_for, flash
 from ..shared.Authentication import Auth
 from ..models.SalesModel import SalesModel, SaleSchema
 
@@ -11,6 +11,7 @@ sales_schema = SaleSchema()
 @Auth.auth_required
 def create():
 
+
     req_data = request.get_json()
     req_data['owner_id'] = g.user.get('id')
     data, error = sales_schema.load(req_data)
@@ -21,7 +22,6 @@ def create():
     data = sales_schema.dump(sale).data
     return custom_response(data, 201)
 
-
 @sales_api.route('/', methods=['GET'])
 def get_all():
 
@@ -30,10 +30,10 @@ def get_all():
     return custom_response(data, 200)
 
 
-@sales_api.route('/<int:sale_id>', methods=['GET'])
+@sales_api.route('/<int:sale_id>' or '/<id>', methods=['GET'])
 def get_one(sale_id):
 
-    post = SalesModel.get_one_sale(sale_id)
+    post = SalesModel.get_one_sale(sale_id) #or request.form.get('sale_id')
     if not post:
         return custom_response({'error': 'sale not found'}, 404)
     data = sales_schema.dump(post).data
@@ -46,7 +46,7 @@ def delete(sale_id):
     """
   Delete
   """
-    sale = SalesModel.get_one_sale(sale_id)
+    sale = SalesModel.get_one_sale(sale_id) or SalesModel.get_one_sale(id)
     if not sale:
         return custom_response({'error': 'sale not found'}, 404)
     data = sales_schema.dump(sale).data
@@ -54,8 +54,7 @@ def delete(sale_id):
         return custom_response({'error': 'permission denied'}, 400)
 
     sale.delete()
-    return custom_response({'message': 'deleted'}, 204)
-
+    return custom_response({'message': 'deleted'}, 204) #, redirect(url_for("sales"))
 
 def custom_response(res, status_code):
     """

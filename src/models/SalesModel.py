@@ -6,12 +6,12 @@ class SalesModel(db.Model):
 
     __tablename__ = 'sales'
     id = db.Column(db.Integer, primary_key=True)
-    order_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
-    sale = db.Column(db.String(50), nullable=False)
+    owner_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
+    sale = db.Column(db.Text, nullable = False)
 
     def __init__(self, data):
-        self.order_id = data.get('order_id')
-        self.sales = data.get('sale')
+        self.owner_id = data.get('owner_id')
+        self.sale = data.get('sale')
 
 
     def save(self):
@@ -35,5 +35,5 @@ class SalesModel(db.Model):
 
 class SaleSchema(Schema):
     id = fields.Int(dump_only=True)
-    order_id = fields.Int(required=True)
-    sales = fields.Str(required=True)
+    owner_id = fields.Int(required=True)
+    sale = fields.Str(required=True)
