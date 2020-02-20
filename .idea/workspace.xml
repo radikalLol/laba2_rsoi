@@ -2,339 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46de626a-bf6d-4c65-b555-f268e31c4109" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/OrdersModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/OrdersModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/SalesModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/SalesModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/UserModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/UserModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/Authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/Authentication.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/OrdersView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/OrdersView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SalesView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SalesView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/UserView.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/UserView.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Click-7.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Click-7.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask-1.1.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Migrate-2.5.2.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_Migrate-2.5.2.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/Flask_SQLAlchemy-2.4.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.1.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.1.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.1.1.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/MarkupSafe-1.1.1.dist-info/WHEEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/PyJWT-1.7.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/compare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/render.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/autogenerate/render.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/impl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/mysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/mysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/oracle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/postgresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/ddl/postgresql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/batch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/ops.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/toimpl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/operations/toimpl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/plugin/pytestplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/plugin/pytestplugin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/requirements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/testing/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/util/sqla_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/alembic/util/sqla_compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bcrypt-3.1.7.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bcrypt-3.1.7.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/bcrypt-3.1.7.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/bcrypt-3.1.7.dist-info/WHEEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_include.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_cffi_include.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_embedding.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/_embedding.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/recompiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/recompiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_cpy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/cffi/vengine_cpy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/easy-install.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/itsdangerous-1.1.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/itsdangerous-1.1.0.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_identifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/_identifier.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/asyncfilters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/asyncfilters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/asyncsupport.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/asyncsupport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/bccache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/compiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/debug.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/debug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/defaults.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/defaults.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/ext.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/idtracking.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/idtracking.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/loaders.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/meta.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/meta.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nativetypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nativetypes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nodes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/nodes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/optimizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/optimizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/parser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/runtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/sandbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/sandbox.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/visitor.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/jinja2/visitor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/_ast_util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/_ast_util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ast.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ast.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/cmd.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/cmd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/codegen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/codegen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/autohandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/autohandler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/babelplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/babelplugin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/beaker_cache.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/beaker_cache.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/linguaplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/linguaplugin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/preprocessors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/preprocessors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/pygmentplugin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/pygmentplugin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/turbogears.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/ext/turbogears.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/filters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/lexer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/lexer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/lookup.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/lookup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/parsetree.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/parsetree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/pygen.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/pygen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/pyparser.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/pyparser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/runtime.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/template.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/template.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/mako/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/mako/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-3.0.0b6.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/marshmallow-3.0.0b6.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.8.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.8.4.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.8.4.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/psycopg2-2.8.4.dist-info/WHEEL" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-2.8.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/python_dateutil-2.8.1.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/python_editor-1.0.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/python_editor-1.0.4.dist-info/RECORD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/six.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/mxodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/pyodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/zxJDBC.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/connectors/zxJDBC.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/databases/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/databases/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/fdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/fdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/kinterbasdb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/firebird/kinterbasdb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/adodbapi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/adodbapi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/information_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/information_schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/mxodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/pymssql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/pymssql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/pyodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mssql/zxjdbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/cymysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/cymysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/enumerated.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/enumerated.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/gaerdbms.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/gaerdbms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/mysqlconnector.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/mysqlconnector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/mysqldb.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/mysqldb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/oursql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/oursql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/pymysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/pymysql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/pyodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/reflection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/mysql/zxjdbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/cx_oracle.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/cx_oracle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/oracle/zxjdbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/array.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/array.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/dml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/dml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/ext.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/ext.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/hstore.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/hstore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/json.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pg8000.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pg8000.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/psycopg2cffi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/psycopg2cffi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pygresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pygresql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pypostgresql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/pypostgresql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/ranges.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/ranges.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/zxjdbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/postgresql/zxjdbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/pysqlcipher.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/pysqlcipher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/pysqlite.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sqlite/pysqlite.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/mxodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/mxodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/pyodbc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/pyodbc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/pysybase.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/dialects/sybase/pysybase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/default.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/default.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/reflection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/reflection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/result.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/threadlocal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/threadlocal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/url.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/url.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/engine/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/attr.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/attr.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/legacy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/legacy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/registry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/event/registry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/exc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/exc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/associationproxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/associationproxy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/automap.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/automap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/baked.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/baked.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/compiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/clsregistry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/declarative/clsregistry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/horizontal_shard.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/horizontal_shard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/hybrid.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/hybrid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/indexable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/indexable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/mutable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/mutable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/orderinglist.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/orderinglist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/ext/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/inspection.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/inspection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/attributes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/attributes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/collections.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/dependency.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/dependency.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/deprecated_interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/deprecated_interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/descriptor_props.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/descriptor_props.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/dynamic.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/dynamic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/evaluator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/exc.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/exc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/identity.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/identity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/instrumentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/instrumentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/interfaces.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/interfaces.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/loading.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/loading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/mapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/mapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/path_registry.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/path_registry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/persistence.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/persistence.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/properties.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/properties.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/relationships.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/relationships.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/scoping.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/scoping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/session.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/state.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/state.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/strategy_options.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/strategy_options.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/sync.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/sync.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/unitofwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/unitofwork.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/orm/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/dbapi_proxy.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/dbapi_proxy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/pool/impl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/processors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/processors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/compiler.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/compiler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/crud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/ddl.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/ddl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/default_comparator.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/default_comparator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/dml.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/dml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/elements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/expression.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/expression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/naming.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/naming.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/operators.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/operators.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/selectable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/selectable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/sqltypes.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/sqltypes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/type_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/type_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/visitors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/sql/visitors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/assertions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/assertions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/assertsql.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/assertsql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/engines.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/engines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/entities.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/entities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/exclusions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/exclusions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/fixtures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/fixtures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/mock.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/mock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/pickleable.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/pickleable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/plugin/plugin_base.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/plugin/plugin_base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/profiling.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/profiling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/requirements.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/requirements.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/util.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/warnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/testing/warnings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/types.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/types.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/_collections.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/_collections.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/deprecations.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/deprecations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/langhelpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/langhelpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/topological.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlalchemy/util/topological.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/_compat.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/_compat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/_internal.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/_internal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/datastructures.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/datastructures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/console.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/console.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/tbtools.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/debug/tbtools.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/http.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/http.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/local.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/middleware/proxy_fix.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/middleware/proxy_fix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/middleware/shared_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/middleware/shared_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/serving.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/serving.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/useragents.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/useragents.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/base_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/base_request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/base_response.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/base_response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/common_descriptors.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/common_descriptors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/etag.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/etag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/request.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wrappers/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/werkzeug/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/activate.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/alembic-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/alembic-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/alembic.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/alembic.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/flask.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/flask.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/mako-render-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/mako-render-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/mako-render.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/mako-render.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pip3.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pyjwt.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pyjwt.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/python.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/UPGRADE_GUIDE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/dist/axios.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/adapters/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/Cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/CancelToken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/cancel/isCancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/Axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/InterceptorManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/buildFullPath.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/createError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/dispatchRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/enhanceError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/mergeConfig.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/settle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/core/transformData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/defaults.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/bind.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/buildURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/combineURLs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/cookies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/deprecatedMethod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isAbsoluteURL.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/isURLSameOrigin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/normalizeHeaderName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/parseHeaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/helpers/spread.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/axios/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.coveralls.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/CHANGELOG.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/debug/src/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/http.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/https.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/follow-redirects/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/ms/readme.md" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -347,15 +81,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/UserModel.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -374,13 +99,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/SalesView.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -410,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/UserView.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+            <state relative-caret-position="1360">
+              <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -602,11 +332,13 @@
       <workItem from="1582215330035" duration="19317000" />
       <workItem from="1582242260802" duration="151000" />
       <workItem from="1582242417600" duration="19000" />
+      <workItem from="1582242465303" duration="3000" />
+      <workItem from="1582242479787" duration="8000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91518000" />
+    <option name="totallyTimeSpent" value="91529000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -622,7 +354,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.20738254" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21275167" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49932885" visible="true" weight="0.28045326" />
@@ -813,6 +545,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/UserView.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="82" column="17" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/OrdersView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -837,19 +576,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/UserView.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="82" column="17" lean-forward="true" selection-start-line="82" selection-start-column="17" selection-end-line="82" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/SalesView.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
