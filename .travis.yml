@@ -14,7 +14,7 @@ install:
 before_script:
     - psql -c 'create database food_delivery;' -U postgres
 script:
-    pytest --cov --cov-config .coveragerc
+    pytest --cov=src
 
 after_success:
     - coveralls
