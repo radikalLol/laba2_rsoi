@@ -1,7 +1,7 @@
 import unittest
 import os
 import json
-from ..app import create_app, db
+from src.app import create_app, db
 
 
 class UsersTest(unittest.TestCase):
