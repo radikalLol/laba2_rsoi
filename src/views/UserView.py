@@ -1,6 +1,6 @@
 # /src/views/UserView
 
-from flask import request, json, Response, Blueprint, g,render_template, redirect, url_for, flash
+from flask import request, json, Response, Blueprint, g
 from ..models.UserModel import UserModel, UserSchema
 from ..shared.Authentication import Auth
 

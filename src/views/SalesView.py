@@ -1,5 +1,5 @@
 
-from flask import request, g, Blueprint, json, Response,render_template, redirect, url_for, flash
+from flask import request, g, Blueprint, json, Response
 from ..shared.Authentication import Auth
 from ..models.SalesModel import SalesModel, SaleSchema
 
