@@ -1,6 +1,7 @@
 import unittest
 import os
 import json
+from flask import Flask
 from src.app import create_app, db
 
 
@@ -13,7 +14,7 @@ class UsersTest(unittest.TestCase):
         """
         Test Setup
         """
-        self.app = create_app("testing")
+        self.app = Flask(__name__)
         self.client = self.app.test_client
         self.user = {
             'name': 'alice',
