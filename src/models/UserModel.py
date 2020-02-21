@@ -7,9 +7,6 @@ from .SalesModel import SaleSchema
 
 
 class UserModel(db.Model):
-    """
-    User Model
-    """
 
     # table name
     __tablename__ = 'users'

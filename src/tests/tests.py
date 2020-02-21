@@ -21,7 +21,6 @@ class UsersTest(unittest.TestCase):
             db.create_all()
 
     def test_user_creation(self):
-        """ test user creation with valid credentials """
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         json_data = json.loads(res.data)
@@ -29,7 +28,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 201)
 
     def test_user_creation_with_existing_email(self):
-        """ test user creation with already existing email"""
+
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
@@ -40,7 +39,7 @@ class UsersTest(unittest.TestCase):
         self.assertTrue(json_data.get('error'))
 
     def test_user_creation_with_no_password(self):
-        """ test user creation with no password"""
+
         user1 = {
             'name': 'alice',
             'email': 'alice@mail.com',
@@ -51,7 +50,7 @@ class UsersTest(unittest.TestCase):
         self.assertTrue(json_data.get('password'))
 
     def test_user_creation_with_no_email(self):
-        """ test user creation with no email """
+
         user1 = {
             'name': 'alice',
             'pasword': 'alice@mail.com',
@@ -121,7 +120,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(json_data.get('name'), 'olawale')
 
     def test_user_update_me(self):
-        """ Test User Update Me """
+
         user1 = {
             'name': 'new name'
         }
@@ -137,7 +136,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(json_data.get('name'), 'new name')
 
     def test_delete_user(self):
-        """ Test User Delete """
+
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
