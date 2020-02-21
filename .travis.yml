@@ -16,7 +16,7 @@ install:
 before_script:
     - psql -c 'create database food_delivery;'
 script:
-    pytest --cov=src src/tests/tests.py
+    pytest --cov=src src/tests.py
 
 after_success:
     - coveralls
