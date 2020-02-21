@@ -1,4 +1,5 @@
 language: python
+dist: bionic
 python:
    - "3.6"
 
@@ -10,9 +11,10 @@ services:
 install:
    - pip install pipenv
    - pipenv install
+   - pip install -r requirements.txt
   
 before_script:
-    - psql -c 'create database food_delivery;' -U postgres
+    - psql -c 'create database food_delivery;'
 script:
     pytest --cov --cov-config .coveragerc
 
