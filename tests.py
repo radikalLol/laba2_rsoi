@@ -22,10 +22,6 @@ class UsersTest(unittest.TestCase):
             'password': 'passw0rd!'
         }
 
-        with self.app.app_context():
-            # create all tables
-            db.create_all()
-
     def test_user_creation(self):
         """ test user creation with valid credentials """
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
