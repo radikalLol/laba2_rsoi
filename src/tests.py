@@ -117,8 +117,8 @@ class UsersTest(unittest.TestCase):
                                 headers={'Content-Type': 'application/json', 'api-token': api_token})
         json_data = json.loads(res.data)
         self.assertEqual(res.status_code, 200)
-        self.assertEqual(json_data.get('email'), 'olawale@mail.com')
-        self.assertEqual(json_data.get('name'), 'olawale')
+        self.assertEqual(json_data.get('email'), 'alice@mail.com')
+        self.assertEqual(json_data.get('name'), 'alice')
 
     def test_user_update_me(self):
         """ Test User Update Me """
