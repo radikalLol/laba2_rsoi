@@ -5,14 +5,9 @@ from src.app import create_app, db
 
 
 class UsersTest(unittest.TestCase):
-    """
-    Users Test Case
-    """
 
     def setUp(self):
-        """
-        Test Setup
-        """
+
         self.app = create_app("testing")
         self.client = self.app.test_client
         self.user = {
@@ -22,11 +17,11 @@ class UsersTest(unittest.TestCase):
         }
 
         with self.app.app_context():
-            # create all tables
+            #create all tables
             db.create_all()
 
     def test_user_creation(self):
-        """ test user creation with valid credentials """
+
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         json_data = json.loads(res.data)
@@ -34,7 +29,6 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 201)
 
     def test_user_creation_with_existing_email(self):
-        """ test user creation with already existing email"""
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
