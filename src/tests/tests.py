@@ -104,7 +104,7 @@ class UsersTest(unittest.TestCase):
         """ User Login Tests with invalid credentials """
         user1 = {
             'password': 'passw0rd!',
-            'email': 'alice.com',
+            'email': 'alice@mail.com',
         }
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
