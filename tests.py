@@ -1,7 +1,6 @@
 import unittest
 import os
 import json
-from flask import Flask
 from src.app import create_app, db
 
 
@@ -14,13 +13,17 @@ class UsersTest(unittest.TestCase):
         """
         Test Setup
         """
-        self.app = Flask(__name__)
+        self.app = create_app("testing")
         self.client = self.app.test_client
         self.user = {
             'name': 'alice',
             'email': 'alice@mail.com',
             'password': 'passw0rd!'
         }
+
+        with self.app.app_context():
+            # create all tables
+            db.create_all()
 
     def test_user_creation(self):
         """ test user creation with valid credentials """
@@ -101,7 +104,7 @@ class UsersTest(unittest.TestCase):
         """ User Login Tests with invalid credentials """
         user1 = {
             'password': 'passw0rd!',
-            'email': 'alice.com',
+            'email': 'alice@mail.com',
         }
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
@@ -151,6 +154,15 @@ class UsersTest(unittest.TestCase):
         res = self.client().delete('/api/v1/users/me',
                                    headers={'Content-Type': 'application/json', 'api-token': api_token})
         self.assertEqual(res.status_code, 204)
+
+    def tearDown(self):
+        """
+        Tear Down
+        """
+        with self.app.app_context():
+            db.session.remove()
+            db.drop_all()
+
 
 if __name__ == "__main__":
     unittest.main()
