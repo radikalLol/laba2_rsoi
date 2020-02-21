@@ -5,14 +5,19 @@ from ..app import create_app, db
 
 
 class UsersTest(unittest.TestCase):
+    """
+    Users Test Case
+    """
 
     def setUp(self):
-
+        """
+        Test Setup
+        """
         self.app = create_app("testing")
         self.client = self.app.test_client
         self.user = {
-            'name': 'Donya',
-            'email': 'email777@mail.com',
+            'name': 'alice',
+            'email': 'alice@mail.com',
             'password': 'passw0rd!'
         }
 
@@ -21,6 +26,7 @@ class UsersTest(unittest.TestCase):
             db.create_all()
 
     def test_user_creation(self):
+        """ test user creation with valid credentials """
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         json_data = json.loads(res.data)
@@ -28,6 +34,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 201)
 
     def test_user_creation_with_existing_email(self):
+        """ test user creation with already existing email"""
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
@@ -38,28 +45,50 @@ class UsersTest(unittest.TestCase):
         self.assertTrue(json_data.get('error'))
 
     def test_user_creation_with_no_password(self):
+        """ test user creation with no password"""
         user1 = {
-            'name': 'Donya',
-            'email': 'email777@mail.com',
+            'name': 'alice',
+            'email': 'alice@mail.com',
         }
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(user1))
         json_data = json.loads(res.data)
         self.assertEqual(res.status_code, 400)
         self.assertTrue(json_data.get('password'))
-        
+
+    def test_user_creation_with_no_email(self):
+        """ test user creation with no email """
+        user1 = {
+            'name': 'alice',
+            'pasword': 'alice@mail.com',
+        }
+        res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(user1))
+        json_data = json.loads(res.data)
+        self.assertEqual(res.status_code, 400)
+        self.assertTrue(json_data.get('email'))
+
+    def test_user_creation_with_empty_request(self):
+        """ test user creation with empty request """
+        user1 = {}
+        res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(user1))
+        json_data = json.loads(res.data)
+        self.assertEqual(res.status_code, 400)
+
     def test_user_login(self):
-                res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user))
-                self.assertEqual(res.status_code, 201)
-                res = self.client().post('/api/v1/users/login', headers={'Content-Type': 'application/json'}, data=json.dumps(self.user))
-                json_data = json.loads(res.data)
-                self.assertTrue(json_data.get('jwt_token'))
-                self.assertEqual(res.status_code, 200)
+        """ User Login Tests """
+        res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(self.user))
+        self.assertEqual(res.status_code, 201)
+        res = self.client().post('/api/v1/users/login', headers={'Content-Type': 'application/json'},
+                                 data=json.dumps(self.user))
+        json_data = json.loads(res.data)
+        self.assertTrue(json_data.get('jwt_token'))
+        self.assertEqual(res.status_code, 200)
 
     def test_user_login_with_invalid_password(self):
         """ User Login Tests with invalid credentials """
         user1 = {
-            'password': 'eeeeeeee',
-            'email': 'email777@mail.com',
+            'password': 'rrrrrr',
+            'email': 'alice@mail.com',
         }
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
@@ -75,7 +104,7 @@ class UsersTest(unittest.TestCase):
         """ User Login Tests with invalid credentials """
         user1 = {
             'password': 'passw0rd!',
-            'email': 'osirfkasssl.com',
+            'email': 'alice.com',
         }
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
@@ -97,8 +126,8 @@ class UsersTest(unittest.TestCase):
                                 headers={'Content-Type': 'application/json', 'api-token': api_token})
         json_data = json.loads(res.data)
         self.assertEqual(res.status_code, 200)
-        self.assertEqual(json_data.get('email'), 'email777@mail.com')
-        self.assertEqual(json_data.get('name'), 'Donya')
+        self.assertEqual(json_data.get('email'), 'olawale@mail.com')
+        self.assertEqual(json_data.get('name'), 'olawale')
 
     def test_user_update_me(self):
         """ Test User Update Me """
@@ -128,11 +157,12 @@ class UsersTest(unittest.TestCase):
 
     def tearDown(self):
         """
-            Tear Down
-            """
+        Tear Down
+        """
         with self.app.app_context():
             db.session.remove()
             db.drop_all()
 
-    if __name__ == "__main__":
-        unittest.main()
+
+if __name__ == "__main__":
+    unittest.main()
