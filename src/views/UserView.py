@@ -9,9 +9,7 @@ user_schema = UserSchema()
 
 @user_api.route('/', methods=['POST'])
 def create():
-    """
-    Create User Function
-    """
+
     req_data = request.get_json()
     data, error = user_schema.load(req_data)
     if error:
@@ -34,9 +32,7 @@ def create():
 @user_api.route('/', methods=['GET'])
 @Auth.auth_required
 def get_all():
-    """
-    Get all users
-    """
+
     users = UserModel.get_all_users()
     ser_users = user_schema.dump(users, many=True).data
     return custom_response(ser_users, 200)
@@ -45,9 +41,7 @@ def get_all():
 @user_api.route('/<int:user_id>', methods=['GET'])
 @Auth.auth_required
 def get_a_user(user_id):
-    """
-    Get a single user
-    """
+
     user = UserModel.get_one_user(user_id)
     if not user:
         return custom_response({'error': 'user not found'}, 404)
@@ -59,9 +53,7 @@ def get_a_user(user_id):
 @user_api.route('/me', methods=['PUT'])
 @Auth.auth_required
 def update():
-    """
-    Update me
-    """
+
     req_data = request.get_json()
     data, error = user_schema.load(req_data, partial=True)
     if error:
@@ -76,9 +68,7 @@ def update():
 @user_api.route('/me', methods=['DELETE'])
 @Auth.auth_required
 def delete():
-    """
-    Delete a user
-    """
+
     user = UserModel.get_one_user(g.user.get('id'))
     user.delete()
     return custom_response({'message': 'deleted'}, 204)
@@ -87,9 +77,7 @@ def delete():
 @user_api.route('/me', methods=['GET'])
 @Auth.auth_required
 def get_me():
-    """
-    Get me
-    """
+
     user = UserModel.get_one_user(g.user.get('id'))
     ser_user = user_schema.dump(user).data
     return custom_response(ser_user, 200)
@@ -97,9 +85,7 @@ def get_me():
 
 @user_api.route('/login', methods=['POST'])
 def login():
-    """
-    User Login Function
-    """
+
     req_data = request.get_json()
 
     data, error = user_schema.load(req_data, partial=True)
@@ -118,9 +104,7 @@ def login():
 
 
 def custom_response(res, status_code):
-    """
-    Custom Response Function
-    """
+
     return Response(
         mimetype="application/json",
         response=json.dumps(res),

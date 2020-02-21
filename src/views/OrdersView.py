@@ -43,9 +43,7 @@ def get_one(blogpost_id):
 @order_api.route('/<int:order_id>', methods=['DELETE'])
 @Auth.auth_required
 def delete(sale_id):
-    """
-  Delete
-  """
+
     order = OrdersModel.get_one_order(sale_id)
     if not order:
         return custom_response({'error': 'order not found'}, 404)
@@ -58,9 +56,7 @@ def delete(sale_id):
 
 
 def custom_response(res, status_code):
-    """
-  Custom Response Function
-  """
+
     return Response(
         mimetype="application/json",
         response=json.dumps(res),

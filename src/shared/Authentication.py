@@ -9,15 +9,10 @@ from ..models.UserModel import UserModel
 
 
 class Auth():
-    """
-    Auth Class
-    """
 
     @staticmethod
     def generate_token(user_id):
-        """
-        Generate Token Method
-        """
+
         try:
             payload = {
                 'exp': datetime.datetime.utcnow() + datetime.timedelta(days=1),
@@ -34,9 +29,7 @@ class Auth():
 
     @staticmethod
     def decode_token(token):
-        """
-        Decode token method
-        """
+
         re = {'data': {}, 'error': {}}
         try:
             payload = jwt.decode(token, 'hhgaghhgsdhdhdd')

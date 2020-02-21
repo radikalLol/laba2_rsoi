@@ -43,9 +43,7 @@ def get_one(sale_id):
 @sales_api.route('/<int:sale_id>', methods=['DELETE'])
 @Auth.auth_required
 def delete(sale_id):
-    """
-  Delete
-  """
+
     sale = SalesModel.get_one_sale(sale_id) or SalesModel.get_one_sale(id)
     if not sale:
         return custom_response({'error': 'sale not found'}, 404)
@@ -57,9 +55,7 @@ def delete(sale_id):
     return custom_response({'message': 'deleted'}, 204) #, redirect(url_for("sales"))
 
 def custom_response(res, status_code):
-    """
-  Custom Response Function
-  """
+
     return Response(
         mimetype="application/json",
         response=json.dumps(res),
