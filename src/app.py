@@ -7,7 +7,6 @@ from .models import db, bcrypt
 from .views.UserView import user_api as user_blueprint
 from .views.SalesView import sales_api as sale_blueprint
 from .views.OrdersView import order_api as order_blueprint
-from flask_cors import CORS
 
 def create_app(env_name):
 
