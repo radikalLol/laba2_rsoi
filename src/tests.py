@@ -121,7 +121,6 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(json_data.get('name'), 'alice')
 
     def test_user_update_me(self):
-        """ Test User Update Me """
         user1 = {
             'name': 'new name'
         }
