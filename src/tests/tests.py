@@ -5,14 +5,9 @@ from ..app import create_app, db
 
 
 class UsersTest(unittest.TestCase):
-    """
-    Users Test Case
-    """
 
     def setUp(self):
-        """
-        Test Setup
-        """
+
         self.app = create_app("testing")
         self.client = self.app.test_client
         self.user = {
@@ -67,14 +62,12 @@ class UsersTest(unittest.TestCase):
         self.assertTrue(json_data.get('email'))
 
     def test_user_creation_with_empty_request(self):
-        """ test user creation with empty request """
         user1 = {}
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'}, data=json.dumps(user1))
         json_data = json.loads(res.data)
         self.assertEqual(res.status_code, 400)
 
     def test_user_login(self):
-        """ User Login Tests """
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
@@ -85,7 +78,6 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 200)
 
     def test_user_login_with_invalid_password(self):
-        """ User Login Tests with invalid credentials """
         user1 = {
             'password': 'rrrrrr',
             'email': 'alice@mail.com',
@@ -101,7 +93,6 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 400)
 
     def test_user_login_with_invalid_email(self):
-        """ User Login Tests with invalid credentials """
         user1 = {
             'password': 'passw0rd!',
             'email': 'alice@mail.com',
@@ -117,7 +108,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 400)
 
     def test_user_get_me(self):
-        """ Test User Get Me """
+
         res = self.client().post('/api/v1/users/', headers={'Content-Type': 'application/json'},
                                  data=json.dumps(self.user))
         self.assertEqual(res.status_code, 201)
@@ -156,9 +147,7 @@ class UsersTest(unittest.TestCase):
         self.assertEqual(res.status_code, 204)
 
     def tearDown(self):
-        """
-        Tear Down
-        """
+
         with self.app.app_context():
             db.session.remove()
             db.drop_all()

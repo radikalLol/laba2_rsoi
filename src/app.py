@@ -12,7 +12,7 @@ def create_app(env_name):
 
     # app initiliazation
     app = Flask(__name__)
-    #app.config.from_object(app_config[env_name])
+    app.config.from_object(app_config[env_name])
     app.config.from_pyfile('config.py')
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://User01:777@localhost/food_delivery'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
