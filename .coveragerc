@@ -1,2 +1,2 @@
 [run]
-omit = src/tests/tests.py
+omit = src/tests/*
