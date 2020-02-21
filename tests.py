@@ -152,14 +152,5 @@ class UsersTest(unittest.TestCase):
                                    headers={'Content-Type': 'application/json', 'api-token': api_token})
         self.assertEqual(res.status_code, 204)
 
-    def tearDown(self):
-        """
-        Tear Down
-        """
-        with self.app.app_context():
-            db.session.remove()
-            db.drop_all()
-
-
 if __name__ == "__main__":
     unittest.main()
